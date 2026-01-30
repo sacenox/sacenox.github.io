@@ -185,6 +185,12 @@ a:focus {
   color: var(--color-accent);
 }
 
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media (max-width: 720px) {
   .page {
     padding: 2rem 1rem 1.5rem;
