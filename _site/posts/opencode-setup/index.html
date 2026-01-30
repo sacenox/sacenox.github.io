@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>my opencode setup | sacenox logs</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="my opencode setup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="agents, commands, and the one skill I always load" />
+<meta property="og:description" content="agents, commands, and the one skill I always load" />
+<link rel="canonical" href="http://0.0.0.0:4000/posts/opencode-setup/" />
+<meta property="og:url" content="http://0.0.0.0:4000/posts/opencode-setup/" />
+<meta property="og:site_name" content="sacenox logs" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-01-30T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="my opencode setup" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-30T00:00:00-06:00","datePublished":"2026-01-30T00:00:00-06:00","description":"agents, commands, and the one skill I always load","headline":"my opencode setup","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/posts/opencode-setup/"},"url":"http://0.0.0.0:4000/posts/opencode-setup/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+  <body>
+    <canvas id="galaxy" aria-hidden="true"></canvas>
+    <div class="page">
+      <header class="site-header">
+        <div class="site-title">
+          <span class="prompt">sacenox@github</span>:~$ <span class="title-text">sacenox logs</span><span class="cursor" aria-hidden="true"></span>
+        </div>
+        <div class="site-tagline">terminal notes from the edge</div>
+        <nav class="site-nav" aria-label="Primary">
+          <a class="nav-link" href="/">$ cd /home</a>
+          <a class="nav-link" href="/about">$ cat /about</a>
+        </nav>
+      </header>
+      <main class="content-frame">
+        <div class="ascii-line">+--------------------------------------------------------------------------+</div>
+        <div class="ascii-content">
+          <article class="post">
+  <h1 class="post-title">&gt; reading: my opencode setup</h1>
+  <div class="post-meta"># 2026-01-30</div>
+  <div class="post-body">
+    <h1 id="my-opencode-setup-agents-commands-and-skills">My OpenCode Setup: Agents, Commands, and Skills</h1>
+
+<p>Ever wonder what happens when you get tired of repeating the same AI prompts? You build your own personal army of specialized agents. That’s exactly what I did with my OpenCode configuration.</p>
+
+<h2 id="the-three-amigos-my-agent-collection">The Three Amigos: My Agent Collection</h2>
+
+<p>I’ve got three main agents doing the heavy lifting, each with their own personality and purpose.</p>
+
+<p><strong>The Debug Agent</strong> is my systematic detective. This guy follows a strict four-phase process: root cause investigation, pattern analysis, hypothesis testing, and implementation. No shortcuts allowed. It tracks fix attempts and stops after three failures to question whether we’re solving the wrong problem. The iron law? No fixes without root cause investigation first.</p>
+
+<p><strong>The Plan Agent</strong> is my read-only strategist. It can’t touch any files—just thinks, analyzes, and delegates to explore agents. It breaks down planning into understanding the idea, exploring approaches (usually 2-3 options), and presenting designs in digestible chunks. It applies YAGNI ruthlessly and guards against overengineering.</p>
+
+<p><strong>The Blog Writer Agent</strong> (which is writing this post) specializes in personal, informal content. It researches topics, structures posts with hooks and takeaways, and always includes sources. Temperature is cranked up to 0.7 for creativity.</p>
+
+<h2 id="quick-commands-for-common-tasks">Quick Commands for Common Tasks</h2>
+
+<p>I’ve got three slash commands that handle the boring stuff:</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">/commit-all</code></strong> stages everything and creates conventional commits. It does safety checks for sensitive files and handles pre-commit hook failures gracefully.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">/format-then-lint</code></strong> detects available tools (npm, make, cargo, etc.) and runs formatters before linters. If anything fails, it stops and reports issues.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">/review</code></strong> does code reviews with programming principles in mind. It can review uncommitted changes, specific commits, branches, or even pull requests. It focuses on bugs first, then structure and performance.</p>
+
+<h2 id="the-skill-that-keeps-me-honest">The Skill That Keeps Me Honest</h2>
+
+<p>The <strong>good-programming-principles</strong> skill is loaded whenever I’m designing or reviewing code. It enforces KISS, DRY, YAGNI, and SOLID principles while guarding against feature creep and overengineering. It’s not dogmatic—just keeps solutions simple and scoped.</p>
+
+<h2 id="why-this-setup-works">Why This Setup Works</h2>
+
+<p>The global <code class="language-plaintext highlighter-rouge">AGENTS.md</code> file sets communication rules: be concise, never lie, find root causes before fixing, and minimize token usage. It mandates using exploration agents for multi-file tasks and structured tools over bash utilities.</p>
+
+<p>What I love about this setup is how it codifies good practices. The debug agent prevents me from guessing and checking. The plan agent forces me to think before building. The review command catches issues I’d miss.</p>
+
+<p>It’s like having a team of specialists who never get tired, never forget the process, and always apply best practices. Plus, they’re available 24/7 and don’t need coffee breaks.</p>
+
+<h2 id="sources">Sources</h2>
+
+<ul>
+  <li><a href="https://github.com/sacenox/dotfiles/tree/main/opencode">OpenCode config directory</a></li>
+</ul>
+
+  </div>
+</article>
+
+        </div>
+        <div class="ascii-line">+--------------------------------------------------------------------------+</div>
+      </main>
+      <footer class="site-footer">
+        <span class="prompt">$</span> last build 2026-01-30
+      </footer>
+    </div>
+    <script src="/assets/js/galaxy.js"></script>
+  </body>
+</html>

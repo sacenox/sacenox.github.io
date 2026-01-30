@@ -4,6 +4,9 @@ url: ""
 baseurl: ""
 markdown: kramdown
 permalink: /posts/:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 sass:
   sass_dir: _sass
   style: compressed

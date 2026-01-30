@@ -1,7 +1,7 @@
 services:
   site:
     image: jekyll/jekyll:4
-    command: sh -c "gem install webrick && jekyll serve --watch --force_polling --host 0.0.0.0 --port 4000"
+    command: sh -c "gem install webrick jekyll-seo-tag jekyll-sitemap --no-document && jekyll serve --watch --force_polling --host 0.0.0.0 --port 4000"
     ports:
       - "4000:4000"
     volumes:
