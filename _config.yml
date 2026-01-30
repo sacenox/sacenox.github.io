@@ -1,0 +1,9 @@
+title: sacenox logs
+description: terminal notes from the edge
+url: ""
+baseurl: ""
+markdown: kramdown
+permalink: /posts/:title/
+sass:
+  sass_dir: _sass
+  style: compressed
