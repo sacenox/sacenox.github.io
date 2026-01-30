@@ -141,6 +141,16 @@ a:focus {
   font-size: 1.2rem;
 }
 
+.profile-canvas {
+  display: block;
+  width: 128px;
+  height: 128px;
+  margin: 0.75rem 0 1rem;
+  border: 1px solid var(--color-border);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
 .post-list {
   list-style: none;
   padding: 0;
