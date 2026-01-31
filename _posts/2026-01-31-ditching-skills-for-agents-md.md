@@ -50,8 +50,9 @@ Early testing shows agents find answers faster and use fewer tokens. They're not
 
 The migration took a few prompts and reviews, but the payoff is immediate. Sometimes the research is right: AGENTS.md with targeted docs really does work better than monolithic skills.
 
-Token usage is way down.
+_[EDIT]: Token usage is way down._
 
 ## Sources
 
 - [Vercel's AGENTS.md research](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals)
+- [Refactored AGENTS.md](https://github.com/sacenox/dotfiles/blob/main/opencode/AGENTS.md)
