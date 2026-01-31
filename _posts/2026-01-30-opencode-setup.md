@@ -18,6 +18,8 @@ I've got three main agents doing the heavy lifting, each with their own personal
 
 **The Blog Writer Agent** (which is writing this post) specializes in personal, informal content. It researches topics, structures posts with hooks and takeaways, and always includes sources. Temperature is cranked up to 0.7 for creativity.
 
+Model choice is simple, the Debug and Plan agents use Claude Opus, and the Build mode I switch between Codex and Gemini.  This keeps token usage and costs down, while still using good coding models for hard tasks.
+
 ## Quick Commands for Common Tasks
 
 I've got three slash commands that handle the boring stuff:
