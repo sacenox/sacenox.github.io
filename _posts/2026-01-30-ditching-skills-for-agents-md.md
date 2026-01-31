@@ -48,7 +48,9 @@ I kept all the debugging content but broke it into logical chunks. The writing g
 
 Early testing shows agents find answers faster and use fewer tokens. They're not loading irrelevant sections or getting lost in long files. The debugging workflow especially feels smoother - agents can follow the phases without getting overwhelmed.
 
-The migration took a weekend, but the payoff is immediate. Sometimes the research is right: AGENTS.md with targeted docs really does work better than monolithic skills.
+The migration took a few prompts and reviews, but the payoff is immediate. Sometimes the research is right: AGENTS.md with targeted docs really does work better than monolithic skills.
+
+Token usage is way down.
 
 ## Sources
 
