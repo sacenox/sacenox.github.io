@@ -54,4 +54,4 @@ Token usage is way down.
 
 ## Sources
 
-- [Vercel's AGENTS.md research](https://vercel.com/blog/ai-agents-with-agents-md)
+- [Vercel's AGENTS.md research](https://vercel.com/blog/agents-md-outperforms-skills-in-our-agent-evals)
