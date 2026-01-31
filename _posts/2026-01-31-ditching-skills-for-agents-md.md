@@ -48,6 +48,8 @@ I kept all the debugging content but broke it into logical chunks. The writing g
 
 Early testing shows agents find answers faster and use fewer tokens. They're not loading irrelevant sections or getting lost in long files. The debugging workflow especially feels smoother - agents can follow the phases without getting overwhelmed.
 
+Don't forget to update your `opencode.json` like me - [here's the short cautionary tale](/2026/01/31/when-opencode-cant-see-your-docs/) on why that matters.
+
 The migration took a few prompts and reviews, but the payoff is immediate. Sometimes the research is right: AGENTS.md with targeted docs really does work better than monolithic skills.
 
 _[EDIT]: Token usage is way down._
