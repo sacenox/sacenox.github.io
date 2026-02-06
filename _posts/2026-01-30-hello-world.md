@@ -1,6 +1,6 @@
 ---
 layout: post
-title: hello world
+title: hello-world
 description: first entry in the terminal log
 ---
 

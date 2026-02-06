@@ -1,6 +1,6 @@
 ---
 layout: post
-title: my opencode setup
+title: my-opencode-setup
 description: agents, commands, and the one skill I always load
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "agents.md migration"
+title: agents-md-migration
 description: "A weekend migration from skill files to AGENTS.md, with focused docs, faster lookups, and lower token use."
 ---
 

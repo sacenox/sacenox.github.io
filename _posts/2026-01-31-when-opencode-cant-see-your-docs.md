@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "cautionary tale about the agents.md migration"
+title: cautionary-tale-about-the-agents-md-migration
 description: "A quick cautionary tale about missing docs and the five-minute opencode.json fix."
 ---
 

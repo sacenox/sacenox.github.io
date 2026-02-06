@@ -1,6 +1,6 @@
 ---
 layout: post
-title: rpg project started
+title: rpg-project-started
 description: kicking off a godot dungeon crawler
 ---
 

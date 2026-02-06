@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Less is More: What I Learned About Working with AI"
+title: less-is-more-what-i-learned-about-working-with-ai
 description: Lessons learned from spending $300 on API credits and why simplicity wins.
 ---
 

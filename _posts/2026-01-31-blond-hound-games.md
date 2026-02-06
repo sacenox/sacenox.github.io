@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blond Hound Games
+title: blond-hound-games
 description: new indie game dev project and update hub
 ---
 

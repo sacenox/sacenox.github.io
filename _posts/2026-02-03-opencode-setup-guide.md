@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building a Production-Ready OpenCode Configuration from Scratch
+title: building-a-production-ready-opencode-configuration-from-scratch
 description: A deep dive into cost optimization, workflows, and skills for OpenCode.
 ---
 
