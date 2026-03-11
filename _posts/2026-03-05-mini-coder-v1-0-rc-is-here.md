@@ -10,6 +10,8 @@ After a string of development builds, we're hitting a milestone worth calling ou
 
 If you want a coding agent that lives in your terminal, stays out of your way, and actually moves fast — this is it.
 
+GitHub repo: [sacenox/mini-coder](https://github.com/sacenox/mini-coder).
+
 ---
 
 ## 🚀 What's New in v1 RC

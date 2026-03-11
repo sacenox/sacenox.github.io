@@ -38,9 +38,9 @@ Mini-coder isn't trying to replace your IDE or become the center of your workflo
 
 ## Sources
 
-- [mini-coder README](https://github.com/your-repo/mini-coder) — local repo `README.md`
-- [mini-coder idea doc](https://github.com/your-repo/mini-coder) — local repo `mini-coder-idea.md`
+- [mini-coder README](https://github.com/sacenox/mini-coder) — local repo `README.md`
+- [mini-coder idea doc](https://github.com/sacenox/mini-coder/blob/main/mini-coder-idea.md) — local repo `mini-coder-idea.md`
 - [Bun.js](https://bun.com)
 - [AI SDK](https://ai-sdk.dev)
 - [yoctocolors](https://github.com/sindresorhus/yoctocolors)
-- [.agents convention](https://github.com/agentsmd/agents)
+- [.agents convention](https://github.com/agentsmd/agents.md)
