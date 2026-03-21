@@ -53,8 +53,6 @@ Mini-coder wasn't the only thing moving. A few supporting projects got love too:
 
 - **[yoctomarkdown](https://github.com/sacenox/yoctomarkdown)** — Got flicker-free streaming with append-only partial rendering and proper Unicode width calculation. Markdown in the terminal shouldn't feel like a strobe light.
 
-- **[superpowers](https://github.com/sacenox/superpowers)** — The skills framework got community templates: issue templates, PR templates, code of conduct. Growing up!
-
 - **dead-floor** — My pixel art roguelike side project got 16×16 sprites and a z-ordering fix. Because sometimes you need to make tiny skeletons instead of debugging context windows.
 
 ---
