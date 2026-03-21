@@ -10,6 +10,10 @@ Two weeks ago I posted that mini-coder had reached its [first release candidate]
 
 What actually followed was **393 commits**, four release tags, two new micro-libraries, a full codebase audit, and at least one existential crisis about context pruning. But we made it: **mini-coder is stable.** Version `0.2.2` is on npm right now, and it's the best terminal coding agent I've ever shipped. (It's also the only one I've ever shipped, but still.)
 
+<p align="center">
+  <img src="/assets/images/mini-coder-preview.gif" alt="mini-coder in action"/>
+</p>
+
 ---
 
 ## The Road from RC to Stable
