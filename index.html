@@ -1,0 +1,48 @@
+---
+layout: default
+title: home
+description: home directory listing
+---
+
+<!-- Two-column on wide screens: post list left, galaxy breathes right -->
+<div class="max-w-6xl">
+
+  <div class="text-th-dim text-sm mb-6">
+    <span class="text-th-accent">$</span> ls -la /posts
+    <span class="text-th-dim ml-2">// {{ site.posts.size }} entries</span>
+  </div>
+
+  <div class="content-well">
+    {% for post in site.posts %}
+    <a href="{{ post.url | relative_url }}" class="post-entry group">
+
+      {%- if forloop.first -%}
+      <!-- Latest post: bigger, bolder -->
+      <div class="flex flex-col lg:flex-row lg:items-baseline lg:gap-6 py-1">
+        <time class="text-xs text-th-accent tabular-nums shrink-0 mb-1 lg:mb-0" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+        <div class="min-w-0">
+          <span class="post-entry-title text-base sm:text-lg font-semibold leading-snug">{{ post.title }}</span>
+          {% if post.description %}
+          <p class="text-th-dim text-sm mt-1 max-w-prose">{{ post.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+      {%- else -%}
+      <!-- Older posts: compact -->
+      <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6">
+        <time class="text-xs text-th-dim tabular-nums shrink-0 sm:w-[10ch]" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+        <div class="min-w-0">
+          <span class="post-entry-title text-sm sm:text-base leading-snug">{{ post.title }}</span>
+          {% if post.description %}
+          <p class="text-th-dim text-xs mt-0.5 max-w-prose truncate hidden lg:block">{{ post.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+      {%- endif -%}
+
+    </a>
+    {% endfor %}
+  </div>
+
+</div>
