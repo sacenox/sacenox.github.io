@@ -2,25 +2,24 @@
 layout: default
 ---
 
-<!-- Post reads left-aligned, galaxy fills the right side on wide screens -->
-<article class="max-w-3xl">
+<article>
 
-  <div class="text-sm text-th-dim mb-8">
-    <a href="{{ '/' | relative_url }}" class="hover:text-th-accent transition-colors no-underline">
-      <span class="text-th-accent">$</span> cd ..
+  <div class="mb-8 font-sans text-base">
+    <a href="{{ '/' | relative_url }}" class="text-[#888] hover:text-[#d4a76a] transition-colors no-underline">
+      &larr; posts
     </a>
   </div>
 
   <header class="mb-10">
-    <h1 class="text-xl sm:text-2xl lg:text-3xl font-semibold text-th-bold leading-tight">
+    <h1 class="text-3xl sm:text-4xl font-semibold text-[#f0f0f0] leading-tight tracking-tight">
       {{ page.title }}
     </h1>
-    <time class="block mt-3 text-sm text-th-dim" datetime="{{ page.date | date_to_xmlschema }}">
+    <time class="block mt-4 text-base font-sans text-[#888]" datetime="{{ page.date | date_to_xmlschema }}">
       {{ page.date | date: "%B %-d, %Y" }}
     </time>
   </header>
 
-  <div class="content-well prose">
+  <div class="prose">
     {{ content }}
   </div>
 

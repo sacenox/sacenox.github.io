@@ -1,48 +1,38 @@
 ---
 layout: default
-title: home
-description: home directory listing
+title: posts
+description: notes from the edge
 ---
 
-<!-- Two-column on wide screens: post list left, galaxy breathes right -->
-<div class="max-w-6xl">
+<div class="content-well">
 
-  <div class="text-th-dim text-sm mb-6">
-    <span class="text-th-accent">$</span> ls -la /posts
-    <span class="text-th-dim ml-2">// {{ site.posts.size }} entries</span>
-  </div>
+  {% for post in site.posts %}
+  <a href="{{ post.url | relative_url }}" class="post-entry group block py-5 border-b border-[#222] hover:border-[#d4a76a] transition-colors no-underline">
 
-  <div class="content-well">
-    {% for post in site.posts %}
-    <a href="{{ post.url | relative_url }}" class="post-entry group">
+    {%- if forloop.first -%}
+    <!-- Latest post: more presence -->
+    <div class="flex flex-col gap-1.5">
+      <time class="text-sm font-sans text-[#d4a76a] tabular-nums" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <span class="post-entry-title text-xl sm:text-2xl font-semibold text-[#e5e5e5] leading-snug group-hover:text-[#d4a76a] transition-colors">{{ post.title }}</span>
+      {% if post.description %}
+      <p class="text-base text-[#888] max-w-prose leading-relaxed">{{ post.description }}</p>
+      {% endif %}
+    </div>
 
-      {%- if forloop.first -%}
-      <!-- Latest post: bigger, bolder -->
-      <div class="flex flex-col lg:flex-row lg:items-baseline lg:gap-6 py-1">
-        <time class="text-xs text-th-accent tabular-nums shrink-0 mb-1 lg:mb-0" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-        <div class="min-w-0">
-          <span class="post-entry-title text-base sm:text-lg font-semibold leading-snug">{{ post.title }}</span>
-          {% if post.description %}
-          <p class="text-th-dim text-sm mt-1 max-w-prose">{{ post.description }}</p>
-          {% endif %}
-        </div>
+    {%- else -%}
+    <!-- Older posts: compact -->
+    <div class="flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-6">
+      <time class="text-sm font-sans text-[#666] tabular-nums shrink-0 sm:w-[10ch]" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <div class="min-w-0">
+        <span class="post-entry-title text-base sm:text-lg text-[#d1d1d1] leading-snug group-hover:text-[#d4a76a] transition-colors">{{ post.title }}</span>
+        {% if post.description %}
+        <p class="text-sm text-[#666] mt-0.5 max-w-prose truncate hidden lg:block">{{ post.description }}</p>
+        {% endif %}
       </div>
+    </div>
+    {%- endif -%}
 
-      {%- else -%}
-      <!-- Older posts: compact -->
-      <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-6">
-        <time class="text-xs text-th-dim tabular-nums shrink-0 sm:w-[10ch]" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-        <div class="min-w-0">
-          <span class="post-entry-title text-sm sm:text-base leading-snug">{{ post.title }}</span>
-          {% if post.description %}
-          <p class="text-th-dim text-xs mt-0.5 max-w-prose truncate hidden lg:block">{{ post.description }}</p>
-          {% endif %}
-        </div>
-      </div>
-      {%- endif -%}
-
-    </a>
-    {% endfor %}
-  </div>
+  </a>
+  {% endfor %}
 
 </div>

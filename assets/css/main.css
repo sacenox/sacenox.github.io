@@ -1,0 +1,186 @@
+/* =========================================================
+   sacenox.github.io — minimal dark reading
+   ========================================================= */
+
+/* --- Nav links --- */
+.nav-link {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: #d4a76a;
+}
+.nav-link.active {
+  color: #d4a76a;
+}
+
+/* --- Selection --- */
+::selection {
+  background: rgba(212, 167, 106, 0.25);
+  color: #f0f0f0;
+}
+
+/* --- Prose: reading typography --- */
+.prose {
+  line-height: 1.78;
+  word-break: break-word;
+  font-size: 1.125rem;
+}
+
+.prose > *:first-child {
+  margin-top: 0;
+}
+
+.prose p {
+  margin-bottom: 1.35em;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-weight: 600;
+  color: #f0f0f0;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.prose h1 { font-size: 1.75rem;  margin: 2em 0 0.5em; }
+.prose h2 { font-size: 1.4rem;   margin: 1.75em 0 0.45em; }
+.prose h3 { font-size: 1.2rem;   margin: 1.5em 0 0.4em; }
+.prose h4 { font-size: 1.1rem;   margin: 1.25em 0 0.35em; }
+
+.prose a {
+  color: #d4a76a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212, 167, 106, 0.35);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.prose a:hover {
+  color: #e0c38a;
+  border-bottom-color: #e0c38a;
+}
+
+.prose strong {
+  color: #f0f0f0;
+  font-weight: 600;
+}
+.prose em {
+  font-style: italic;
+}
+
+.prose ul {
+  list-style: none;
+  padding-left: 1.4em;
+  margin: 1em 0;
+}
+.prose ul li {
+  position: relative;
+  margin-bottom: 0.4em;
+}
+.prose ul li::before {
+  content: "—";
+  color: #d4a76a;
+  position: absolute;
+  left: -1.4em;
+}
+
+.prose ol {
+  padding-left: 1.5em;
+  margin: 1em 0;
+}
+.prose ol li {
+  margin-bottom: 0.4em;
+}
+.prose ol li::marker {
+  color: #888;
+}
+
+.prose blockquote {
+  border-left: 2px solid #d4a76a;
+  padding-left: 1.2em;
+  margin: 1.4em 0;
+  color: #999;
+  font-style: italic;
+}
+.prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.prose code {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Menlo', 'Consolas', monospace;
+  font-size: 0.88em;
+  color: #c9a96e;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+.prose pre {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 2px solid #d4a76a;
+  padding: 1em 1.25em;
+  overflow-x: auto;
+  margin: 1.5em 0;
+  line-height: 1.55;
+  border-radius: 0 4px 4px 0;
+}
+.prose pre code {
+  background: transparent;
+  padding: 0;
+  color: #d1d1d1;
+  font-size: 0.84em;
+  border-radius: 0;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.4em 0;
+  border-radius: 2px;
+}
+
+.prose hr {
+  border: none;
+  height: 1px;
+  background: #2a2a2a;
+  margin: 2.5em 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.4em 0;
+  font-size: 0.92em;
+}
+.prose th,
+.prose td {
+  border: 1px solid #2a2a2a;
+  padding: 0.5em 0.75em;
+  text-align: left;
+}
+.prose th {
+  font-weight: 600;
+  color: #f0f0f0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* --- Responsive --- */
+@media (max-width: 640px) {
+  .prose {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+  .prose h1 { font-size: 1.5rem; }
+  .prose h2 { font-size: 1.3rem; }
+  .prose h3 { font-size: 1.1rem; }
+  .prose pre {
+    padding: 0.75em 1em;
+    font-size: 0.82rem;
+  }
+}
+
+/* --- Heading anchors --- */
+.prose :is(h1, h2, h3, h4) {
+  scroll-margin-top: 2rem;
+}
